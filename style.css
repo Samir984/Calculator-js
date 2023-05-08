@@ -1,0 +1,112 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: sans-serif;
+  color: #000;
+  line-height: 1;
+}
+
+img {
+  width: 3rem;
+}
+
+.calcu-container {
+  height: 100vh;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calcu {
+  width: 32rem;
+  height: 48rem;
+  padding: 1rem 0.3rem;
+  border-radius: 9px;
+  border: 1px solid black;
+  box-shadow: 8px 7px 20px rgba(17, 2, 2, 0.3);
+  font-size: 1.8rem;
+  display: grid;
+  background-image: radial-gradient(rgb(26, 44, 161), rgb(77, 89, 110));
+  row-gap: 1rem;
+  grid-template-rows: 3fr 7fr;
+}
+
+.display {
+  font-size: 2.4rem;
+  padding: 0 1rem;
+  display: grid;
+  grid-template-rows: 4fr 6fr;
+  background-color: rgb(235, 245, 236);
+  overflow-x: auto;
+}
+
+.calculate-bar {
+  font-size: 2.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border: none;
+
+  border-bottom: 1px solid rgba(0, 0, 0, 0.543);
+}
+
+.answer-bar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.btn {
+  padding: 0 1rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  align-items: center;
+  gap: 0.8rem;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+
+.key {
+  background-color: #f7f7f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 6.2rem;
+  height: 5rem;
+  transition: all 0.3s;
+}
+
+.key:active {
+  transform: translateY(2px);
+  background-color: #fff;
+}
+
+.operator {
+  font-size: 2.8rem;
+}
+.percentage {
+  font-size: 2rem;
+}
+
+.decimal {
+  margin-bottom: 2rem;
+  font-size: 3.2rem;
+}
+
+.delete-icon {
+  width: 4.2rem;
+}
